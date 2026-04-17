@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin</title>
+
+<style>
+body{
+    background:#faf7f2;
+    font-family:'Segoe UI';
+    padding:30px;
+}
+
+table{
+    width:100%;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+th,td{
+    padding:12px;
+    text-align:left;
+}
+
+th{
+    background:#8b6f47;
+    color:white;
+}
+
+a button{
+    background:red;
+}
+</style>
+
+</head>
+
+<body>
+
+<h2>Admin Panel</h2>
+
+<table>
+<tr>
+<th>ID</th>
+<th>User</th>
+<th>Email</th>
+<th>Role</th>
+<th>Action</th>
+</tr>
+
+{% for u in users %}
+<tr>
+<td>{{u.id}}</td>
+<td>{{u.user_id}}</td>
+<td>{{u.email}}</td>
+<td>{{u.role}}</td>
+<td><a href="/delete_user/{{u.id}}"><button>Delete</button></a></td>
+</tr>
+{% endfor %}
+
+</table>
+
+</body>
+</html>

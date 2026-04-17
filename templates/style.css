@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #41527a;
+    color: white;
+}
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #020617;
+    position: fixed;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 15px;
+    color: #cbd5f5;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #1e293b;
+}
+
+.main {
+    margin-left: 210px;
+    padding: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+button {
+    background: #3b82f6;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{background:#f5f1e8;font-family:Segoe UI;padding:20px;}
+.box{background:white;padding:20px;border-radius:10px;}
+button{background:#8b6f47;color:white;padding:10px;border:none;}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>Your Cart</h2>
+
+{% for p in products %}
+<p>{{p['name']}} - ₹{{p['price']}}</p>
+{% endfor %}
+
+<h3>Total: ₹{{total}}</h3>
+
+<a href="/buy"><button>Buy Now</button></a>
+
+<br><br>
+<a href="/dashboard">Back</a>
+</div>
+
+</body>
+</html>
